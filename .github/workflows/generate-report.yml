@@ -42,7 +42,7 @@ jobs:
     - name: Store Report
       uses: actions/upload-artifact@v2
       with:
-        name: ${{ steps.get-clean-url-name.outputs.cleaned }}
+        name: ${{ steps.get-clean-url-name.outputs.cleaned }}--archive
         path: ${{ steps.get-clean-url-name.outputs.cleaned }}.zip
         # default 90 seems unnecessary for these test results
         retention-days: 14
